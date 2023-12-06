@@ -15,14 +15,14 @@ app.post('/sendemail', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.USER_EMAIL,
-      pass: process.env.USER_PASS,
+      user: "courseplacement55@gmail.com",
+      pass: "cpojxcunsldhwlts",
     },
   }); 
 
   // Email options
   const mailOptions = {
-    from: process.env.USER_EMAIL,
+    from: "courseplacement55@gmail.com",
     to: email,
     subject: 'Hello from Nodemailer',
     text: `Hello ${name}, this is a test email from Nodemailer!`,
